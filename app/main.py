@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from app.model import predict_seniority
 
-app = FastAPI(title="DevOps ML API")
+app = FastAPI(title='DevOps ML API')
 
 class InputData(BaseModel):
     years_experience: float
